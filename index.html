@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.20.0/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+</head>
+<body>
+    <!-- Email -->
+    <div id="root">
+        <!-- Controllo se le email sono nell' array -->
+        <ul v-if="emailList.length === 10">
+            <!-- Scrivo tutte le email  -->
+            <li v-for = "number in emailList"> {{ number }}</li>
+        </ul>
+        <!-- Scrivo caricamento finchè le email non sono salvate -->
+        <div v-else>Caricamento ... </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
